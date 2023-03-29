@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+img{
+  max-width: 25px;
+  max-height: 25px;
+  margin-top: 15px;
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../img/mascotas.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+
+}
+
+h3{
+  font-size: 80px;
+  color: blueviolet;
+  margin-bottom: 10px;
+}
+
+button{
+  border-radius: 20%;
+  background-color: skyblue;
+  height: 30px;
+  margin: 10px;
+}
+
+h1{
+  color: black;
+ 
+}
