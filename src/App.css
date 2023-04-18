@@ -50,7 +50,7 @@ body{
   box-sizing: border-box;
   width: 100vw;
   height: 80vh;
-  background-image: url(../img/mascotas.jpg);
+  /*background-image: url(./img/mascotas.jpg);*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;

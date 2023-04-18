@@ -1,17 +1,21 @@
+import './NavBar.css'
 import CartWidget from "../CartWidget/CartWidget"
+import { NavLink, Link } from 'react-router-dom'
 
 const NavBar = () => {
     return(
-        <nav>
-            <h3>Mi Petshop Virtual</h3>
-            <div>
-                <button>Alimentos para perros</button>
-                <button>Alimentos para gatos</button>
-                <button>Accesorios para mascotas</button>
+        <nav className="NavBar">
+            <Link to= '/'>
+              <h3>Mi Petshop Virtual</h3>
+            </Link>
+            <div className="Categories">
+                <NavLink to={`/category/Alimento para perros`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Alimento para perros</NavLink>
+                <NavLink to={`/category/Alimento para gatos`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Alimento para gatos</NavLink>
+                <NavLink to={`/category/Accesorios`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Accesorios</NavLink> 
             </div>
             <CartWidget />
         </nav>
     )
 }
 
-export default NavBar
+export default NavBar;
