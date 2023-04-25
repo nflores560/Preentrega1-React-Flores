@@ -1,0 +1,20 @@
+.CardItem{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 800px;
+    object-fit: cover;
+    align-items: center;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.Header{
+    width: 300px;
+}
+
+.Info{
+    width: 300px;
+}
