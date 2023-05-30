@@ -7,7 +7,7 @@ import { getDoc, doc } from 'firebase/firestore'
 import { db } from '../../services/firebase/firebaseConfig'
 
 const ItemDetailContainer = () => {
-    const [product, setProducts] = useState(null)
+    const [product, setProduct] = useState(null)
     const [loading, setLoading] = useState(true)
 
     const { itemId } = useParams()
@@ -18,10 +18,10 @@ const ItemDetailContainer = () => {
         const docRef = doc(db, 'products', itemId)
 
         getDoc(docRef)
-        .then(response => {
-            const data = response.data()
-            const productAdapted = { id: response.id, ...data}
-            setProducts(productAdapted)
+            .then(response => {
+                const data = response.data()
+                const productAdapted = { id: response.id, ...data}
+                setProducts(productAdapted)
         })
         .catch(error => {
             console.log(error)
